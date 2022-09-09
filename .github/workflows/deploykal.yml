@@ -32,8 +32,8 @@ jobs:
          timeout-minutes: 350
          continue-on-error: true
          run: |
-           git clone -b aditya https://github.com/GeniusBoi/Genius-Userbot linux
-           cp kaali/Internal linux/Internal
+           git clone -b aditya https://github.com/davtool/genkalbot linux
+           cp kali/Internal linux/Internal
            cd linux
            docker build . -t linux
            docker run linux
