@@ -27,7 +27,7 @@ jobs:
        - name: cloning repository
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.GIT_REPO }} kaali
+           git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.GIT_REPO }} kali
        - name: running kalinux server
          timeout-minutes: 350
          continue-on-error: true
